@@ -1,0 +1,64 @@
+.projucts {
+  font-family: "Kaisei HarunoUmi", serif;
+  position: relative;
+  left: 10rem;
+  max-width: 1100px;
+  display: flex;
+  padding-top: 4rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .projuct {
+    width: 350px;
+    height: 300px;
+
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+      &:hover {
+        opacity: 0.1;
+      }
+    }
+    .projuct-info {
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      opacity: 0;
+      &.show {
+        opacity: 1;
+      }
+      h1 {
+        text-align: center;
+        color: $pretty-color;
+        font-size: 1.5rem;
+      }
+
+      p {
+        margin-top: 20px;
+        color: $light-color;
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .go-btn {
+        width: 100px;
+        height: 30px;
+        background-color: $pretty-color;
+        font-size: 1.2rem;
+        border: none;
+        color: white;
+        margin: 0 auto;
+      }
+    }
+  }
+}

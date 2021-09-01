@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&family=Kaisei+Tokumin&family=Source+Code+Pro:ital,wght@1,200&family=ZCOOL+KuaiLe&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes show_it {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes showFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes showFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes showFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes showFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.intro {
+  font-family: "Kaisei HarunoUmi", serif;
+  position: relative;
+  left: 15rem;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rem;
+}
+
+.intro .prename {
+  animation: showFromLeft 0.5s ease;
+  font-size: 1.4rem;
+}
+
+.intro h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  animation: showFromRight 0.5s ease;
+}
+
+.intro .name {
+  animation: showFromLeft 0.5s ease;
+  color: #cdd7f3;
+}
+
+.intro .what {
+  color: #8b8f9b;
+}
+
+.intro .sum {
+  animation: showFromBottom 0.5s ease;
+  color: #8b8f9b;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.intro .more {
+  width: 10rem;
+  height: 3rem;
+  background-color: #00c6bd;
+  color: #344059;
+  font-weight: 500;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 1rem 0 0 auto;
+  transition: all 0.4s ease;
+}
+
+.intro .more:hover {
+  background-color: transparent;
+  box-shadow: 10px 0px 0px 0px #0092ff;
+  border: 1px solid #0092ff;
+  color: #cdd7f3;
+}
+
+.color__full {
+  color: #00c6bd;
+}
+
+.go-up {
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.about {
+  font-family: "Kaisei HarunoUmi", serif;
+  position: relative;
+  left: 15rem;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+}
+
+.about h1 {
+  color: #0092ff;
+  font-size: 2rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #8b8f9b;
+}
+
+.about .skils__container {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.about .skils__container h2 {
+  color: #8b8f9b;
+  font-size: 1.3rem;
+}
+
+.about .skils__container h3 {
+  font-size: 0.9rem;
+}
+
+.about .skill {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  z-index: 2;
+  background-color: #0c1b31;
+  font-family: "ZCOOL KuaiLe", cursive;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 5rem;
+  border-bottom: 1px solid #00c6bd;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  justify-content: flex-end;
+}
+
+.navbar .nav_menu {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.navbar .nav_menu .nav_menu__item {
+  list-style: none;
+  padding: 10px;
+  animation: showFromTop 0.6s ease;
+}
+
+.navbar .nav_menu .nav_menu__item .nav_menu_link {
+  color: #cdd7f3;
+  transition: all 0.4s ease;
+  padding: 2px;
+}
+
+.navbar .nav_menu .nav_menu__item .nav_menu_link.active {
+  color: #00c6bd;
+}
+
+.navbar .nav_menu .nav_menu__item .nav_menu_link:hover {
+  color: #0092ff;
+  box-shadow: 0 0 2px 2px #00c6bd;
+}
+
+.side {
+  color: white;
+  position: fixed;
+  left: 0;
+  display: flex;
+  height: 100vh;
+  width: 7rem;
+  justify-content: center;
+  border: 1px solid #00c6bd;
+  border-bottom: 2rem solid #00c6bd;
+  transition: all 0.4s ease;
+}
+
+.side .line {
+  width: 3px;
+  height: 60%;
+  background-color: #00c6bd;
+}
+
+.side .social {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 5rem;
+  animation: showFromTop 0.5s ease-out;
+}
+
+.side .social i {
+  margin-bottom: 20px;
+  font-size: 23px;
+  transition: all 0.4s ease;
+}
+
+.side .social i:hover {
+  color: #00c6bd;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.fill {
+  border-bottom: 2rem solid #0092ff;
+}
+
+.projucts {
+  font-family: "Kaisei HarunoUmi", serif;
+  position: relative;
+  left: 10rem;
+  max-width: 1100px;
+  display: flex;
+  padding-top: 4rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projucts .projuct {
+  width: 350px;
+  height: 300px;
+  cursor: pointer;
+  margin-top: 20px;
+  position: relative;
+}
+
+.projucts .projuct img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.projucts .projuct img:hover {
+  opacity: 0.1;
+}
+
+.projucts .projuct .projuct-info {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  opacity: 0;
+}
+
+.projucts .projuct .projuct-info.show {
+  opacity: 1;
+}
+
+.projucts .projuct .projuct-info h1 {
+  text-align: center;
+  color: #00c6bd;
+  font-size: 1.5rem;
+}
+
+.projucts .projuct .projuct-info p {
+  margin-top: 20px;
+  color: #8b8f9b;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projucts .projuct .projuct-info .go-btn {
+  width: 100px;
+  height: 30px;
+  background-color: #00c6bd;
+  font-size: 1.2rem;
+  border: none;
+  color: white;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0c1b31;
+  font-size: 10px;
+  overflow-x: hidden;
+  width: 100vw;
+  cursor: none;
+  scroll-behavior: smooth !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+#mouse {
+  color: #00c6bd;
+  font-size: 1.7rem;
+  position: absolute;
+  top: 110px;
+  left: 110px;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.4s ease;
+}
+
+#mouse.grow {
+  transform: scale(1.1);
+}
+
+.go-up {
+  position: fixed;
+  right: 3rem;
+  bottom: 4rem;
+  color: #00c6bd;
+  font-size: 3rem;
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0);
+  cursor: pointer;
+}
+
+.go-up.show {
+  opacity: 1;
+  transform: scale(1);
+}
+/*# sourceMappingURL=main.css.map */

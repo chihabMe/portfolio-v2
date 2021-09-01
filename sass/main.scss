@@ -1,0 +1,57 @@
+@import "config";
+@import "variables";
+@import "fonts";
+@import "animation";
+@import "intro";
+@import "about";
+@import "navbar";
+@import "asid";
+@import "projucts";
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $primery-color;
+  font-size: 10px;
+  overflow-x: hidden;
+  width: 100vw;
+  cursor: none;
+  scroll-behavior: smooth !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+#mouse {
+  color: $pretty-color;
+  font-size: 1.7rem;
+  position: absolute;
+  top: 110px;
+  left: 110px;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.4s ease;
+  &.grow {
+    transform: scale(1.1);
+  }
+}
+
+.go-up {
+  position: fixed;
+  right: 3rem;
+  bottom: 4rem;
+  color: $pretty-color;
+  font-size: 3rem;
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0);
+  cursor: pointer;
+
+  &.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

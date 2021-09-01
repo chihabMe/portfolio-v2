@@ -1,0 +1,35 @@
+.about {
+  font-family: "Kaisei HarunoUmi", serif;
+  position: relative;
+  left: 15rem;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  h1 {
+    color: $blue-color;
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+    color: $light-color;
+  }
+  .skils__container {
+    h2 {
+      color: $light-color;
+      font-size: 1.3rem;
+    }
+    h3 {
+      font-size: 0.9rem;
+    }
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .skill {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,36 @@
+.navbar {
+  z-index: 2;
+  background-color: $primery-color;
+  font-family: "ZCOOL KuaiLe", cursive;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 5rem;
+  border-bottom: 1px solid $pretty-color;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  justify-content: flex-end;
+  .nav_menu {
+    display: flex;
+    margin-right: 2rem;
+    .nav_menu__item {
+      list-style: none;
+      padding: 10px;
+      animation: showFromTop 0.6s ease;
+      .nav_menu_link {
+        color: $secondery-color;
+        @include trans;
+        padding: 2px;
+
+        &.active {
+          color: $pretty-color;
+        }
+        &:hover {
+          color: $blue-color;
+          box-shadow: 0 0 2px 2px $pretty-color;
+        }
+      }
+    }
+  }
+}
