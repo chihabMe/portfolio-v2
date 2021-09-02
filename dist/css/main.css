@@ -105,7 +105,7 @@
 .intro .more {
   width: 10rem;
   height: 3rem;
-  background-color: #00c6bd;
+  background-color: #0092ff;
   color: #344059;
   font-weight: 500;
   border: none;
@@ -117,13 +117,13 @@
 
 .intro .more:hover {
   background-color: transparent;
-  box-shadow: 10px 0px 0px 0px #0092ff;
-  border: 1px solid #0092ff;
+  box-shadow: 10px 0px 0px 0px #00c6bd;
+  border: 1px solid #00c6bd;
   color: #cdd7f3;
 }
 
 .color__full {
-  color: #00c6bd;
+  color: #0092ff;
 }
 
 .go-up {
@@ -142,7 +142,7 @@
 }
 
 .about h1 {
-  color: #0092ff;
+  color: #00c6bd;
   font-size: 2rem;
 }
 
@@ -159,12 +159,16 @@
 }
 
 .about .skils__container h2 {
-  color: #8b8f9b;
+  color: #cdd7f3;
   font-size: 1.3rem;
 }
 
 .about .skils__container h3 {
   font-size: 0.9rem;
+}
+
+.about .skils__container h3 span {
+  color: #00c6bd;
 }
 
 .about .skill {
@@ -181,7 +185,7 @@
   top: 0;
   width: 100vw;
   height: 5rem;
-  border-bottom: 1px solid #00c6bd;
+  border-bottom: 1px solid #0092ff;
   display: flex;
   align-items: center;
   font-size: 1.5rem;
@@ -206,12 +210,12 @@
 }
 
 .navbar .nav_menu .nav_menu__item .nav_menu_link.active {
-  color: #00c6bd;
+  color: #0092ff;
 }
 
 .navbar .nav_menu .nav_menu__item .nav_menu_link:hover {
-  color: #0092ff;
-  box-shadow: 0 0 2px 2px #00c6bd;
+  color: #00c6bd;
+  box-shadow: 0 0 2px 2px #0092ff;
 }
 
 .side {
@@ -222,15 +226,15 @@
   height: 100vh;
   width: 7rem;
   justify-content: center;
-  border: 1px solid #00c6bd;
-  border-bottom: 2rem solid #00c6bd;
+  border: 1px solid #0092ff;
+  border-bottom: 2rem solid #0092ff;
   transition: all 0.4s ease;
 }
 
 .side .line {
   width: 3px;
   height: 60%;
-  background-color: #00c6bd;
+  background-color: #0092ff;
 }
 
 .side .social {
@@ -251,13 +255,13 @@
 }
 
 .side .social i:hover {
-  color: #00c6bd;
-  transform: translateY(-5px);
+  color: #0092ff;
+  transform: translateY(-1px);
   cursor: pointer;
 }
 
 .fill {
-  border-bottom: 2rem solid #0092ff;
+  border-bottom: 2rem solid #00c6bd;
 }
 
 .projucts {
@@ -308,7 +312,7 @@
 
 .projucts .projuct .projuct-info h1 {
   text-align: center;
-  color: #00c6bd;
+  color: #0092ff;
   font-size: 1.5rem;
 }
 
@@ -323,7 +327,7 @@
 .projucts .projuct .projuct-info .go-btn {
   width: 100px;
   height: 30px;
-  background-color: #00c6bd;
+  background-color: #0092ff;
   font-size: 1.2rem;
   border: none;
   color: white;
@@ -348,7 +352,7 @@ a {
 }
 
 #mouse {
-  color: #00c6bd;
+  color: #0092ff;
   font-size: 1.7rem;
   position: absolute;
   top: 110px;
@@ -367,7 +371,7 @@ a {
   position: fixed;
   right: 3rem;
   bottom: 4rem;
-  color: #00c6bd;
+  color: #0092ff;
   font-size: 3rem;
   cursor: pointer;
   opacity: 0;

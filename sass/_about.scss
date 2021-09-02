@@ -16,11 +16,14 @@
   }
   .skils__container {
     h2 {
-      color: $light-color;
+      color: $secondery-color;
       font-size: 1.3rem;
     }
     h3 {
       font-size: 0.9rem;
+      span {
+        color: $blue-color;
+      }
     }
     width: 50%;
     display: flex;

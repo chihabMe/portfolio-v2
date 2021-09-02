@@ -29,7 +29,7 @@
       @include trans;
       &:hover {
         color: $pretty-color;
-        transform: translateY(-5px);
+        transform: translateY(-1px);
         cursor: pointer;
       }
     }
